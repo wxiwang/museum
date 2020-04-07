@@ -32,10 +32,10 @@ function showSlides(n) {
 }
 
 var ct = document.getElementsByClassName("counter");
-let ret=ct[0].innerHTML;
+let ret=ct[0].textContent;
 ret=3623037;
 setInterval(function(){
             ret--;
-            ct[0].innerHTML=String(ret).replace(/(\d)(?=(\d{3})+$)/g, "$1,");;
+            ct[0].textContent=String(ret).replace(/(\d)(?=(\d{3})+$)/g, "$1,");;
         },1000)
 
