@@ -194,18 +194,29 @@ footer div{
 }
 
 /* sticky footer*/
+html {
+  height: 100%;
+}
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .content {
   flex: 1 0 auto;
+  
 }
 .site-footer {
   flex-shrink: 0;
+  padding: 20px;
 }
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
-@media screen and (max-width: 699px) {
+
+
+li {
+  list-style-type:none;
+}
+/* Add media queries for responsiveness - when the screen is 600px wide or less, change the style of header and footer */ 
+@media screen and (max-width: 600px) {
   .header {
     display:flex;
     flex-direction:column;
